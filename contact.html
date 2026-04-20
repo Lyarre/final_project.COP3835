@@ -1,0 +1,404 @@
+<!--
+  Author:      Lucas Menendez
+  Date:        April 19, 2026
+  Description: GameVault - Video Game News Website | Contact Page (contact.html)
+               Contains a full contact form with multiple input types, a mailto
+               link, contact information blocks, and a newsletter signup.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault | Contact Us — Submit Tips, Feedback &amp; Press Inquiries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="index.html" class="site-logo">Game<span>Vault</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <p class="page-hero-eyebrow">// Get In Touch</p>
+      <h1 class="page-hero-title">Contact <span class="text-cyan">Us</span></h1>
+      <p class="page-hero-desc">
+        Have a news tip? Want to write for us? Press inquiries, review requests, or
+        just want to say hi — our team reads every message.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT INFO BLOCKS ===================== -->
+  <section class="section" style="padding-bottom:2rem;">
+    <div class="container">
+      <div class="contact-info-grid">
+        <div class="contact-info-item">
+          <span class="contact-icon">✉</span>
+          <h4>General Inquiries</h4>
+          <p><a href="mailto:general@gamevault.com">general@gamevault.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-icon">🗞</span>
+          <h4>News Tips</h4>
+          <p><a href="mailto:tips@gamevault.com">tips@gamevault.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-icon">🎮</span>
+          <h4>Review Requests</h4>
+          <p><a href="mailto:reviews@gamevault.com">reviews@gamevault.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-icon">📢</span>
+          <h4>Press &amp; Media</h4>
+          <p><a href="mailto:press@gamevault.com">press@gamevault.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT FORM + SIDEBAR ===================== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="content-sidebar">
+
+        <!-- Main Form -->
+        <main>
+          <h2 class="section-title">Send Us a Message</h2>
+          <p class="section-subtitle">Use the form below and we'll get back to you within 48 hours.</p>
+
+          <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius); padding:2.5rem;">
+            <form class="contact-form" action="mailto:general@gamevault.com" method="post" enctype="text/plain">
+
+              <!-- First Name -->
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  placeholder="e.g. Alex"
+                  required
+                />
+              </div>
+
+              <!-- Last Name -->
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  placeholder="e.g. Johnson"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="phone">Phone (Optional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(305) 555-0123"
+                />
+              </div>
+
+              <!-- Inquiry Type -->
+              <div class="form-group full-width">
+                <label for="inquiry-type">Inquiry Type *</label>
+                <select id="inquiry-type" name="inquiry_type" required>
+                  <option value="" disabled selected>— Select a category —</option>
+                  <option value="news-tip">News Tip</option>
+                  <option value="review-request">Review / Press Request</option>
+                  <option value="write-for-us">Write For Us</option>
+                  <option value="advertising">Advertising</option>
+                  <option value="community">Community / Forum</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="feedback">Website Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group full-width">
+                <label for="subject">Subject *</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Brief subject of your message"
+                  required
+                />
+              </div>
+
+              <!-- Platform (checkboxes) -->
+              <div class="form-group full-width">
+                <label>Platform(s) You Game On</label>
+                <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:0.5rem;">
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="ps5" />
+                    <span>🎮 PlayStation 5</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="xbox" />
+                    <span>🟢 Xbox Series X/S</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="switch" />
+                    <span>🔴 Nintendo Switch 2</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="pc" />
+                    <span>💻 PC</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="mobile" />
+                    <span>📱 Mobile</span>
+                  </label>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="platform" value="vr" />
+                    <span>🥽 VR / AR</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group full-width">
+                <label for="message">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us what's on your mind..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Rating (how did you find us) -->
+              <div class="form-group full-width">
+                <label for="found-us">How did you find GameVault?</label>
+                <select id="found-us" name="found_us">
+                  <option value="" disabled selected>— Select one —</option>
+                  <option value="google">Google / Search Engine</option>
+                  <option value="social">Social Media</option>
+                  <option value="friend">A Friend or Colleague</option>
+                  <option value="reddit">Reddit</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Newsletter opt-in -->
+              <div class="form-group full-width">
+                <label class="form-checkbox">
+                  <input type="checkbox" name="newsletter" value="yes" />
+                  <span>Subscribe me to the GameVault daily newsletter — no spam, just news.</span>
+                </label>
+              </div>
+
+              <!-- Terms -->
+              <div class="form-group full-width">
+                <label class="form-checkbox">
+                  <input type="checkbox" name="terms" value="agreed" required />
+                  <span>I agree that this message may be shared internally with the GameVault editorial team. *</span>
+                </label>
+              </div>
+
+              <!-- Submit -->
+              <div class="form-submit-area">
+                <button type="submit" class="btn btn-primary">Send Message →</button>
+                <button type="reset" class="btn btn-outline">Clear Form</button>
+                <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim); letter-spacing:1px;">
+                  * Required fields. We respect your privacy.
+                </p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Direct email CTA -->
+          <div style="margin-top:2rem; padding:1.5rem; background:var(--bg-card); border:1px solid rgba(0,245,212,0.2); border-radius:var(--radius); display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+            <div>
+              <h4 style="font-family:var(--font-heading); font-size:0.8rem; letter-spacing:2px; color:var(--neon-cyan); margin-bottom:0.3rem;">PREFER EMAIL DIRECTLY?</h4>
+              <p style="font-size:0.9rem; color:var(--text-secondary);">Reach our main editorial inbox any time.</p>
+            </div>
+            <a href="mailto:general@gamevault.com" class="btn btn-outline">
+              ✉ general@gamevault.com
+            </a>
+          </div>
+        </main>
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h3>Write For Us</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem; line-height:1.6;">
+              Are you a passionate gamer with writing skills? GameVault is always looking for
+              new contributors. All genres and platforms welcome.
+            </p>
+            <ul style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1rem;">
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">▸</span>
+                News reporting
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">▸</span>
+                Game reviews
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">▸</span>
+                Opinion pieces
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">▸</span>
+                Guides &amp; walkthroughs
+              </li>
+            </ul>
+            <a href="mailto:general@gamevault.com?subject=Write%20For%20GameVault" class="btn btn-outline" style="display:block; text-align:center; font-size:0.65rem;">Apply to Write →</a>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Response Times</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; justify-content:space-between;">
+                <span>General</span> <span style="color:var(--neon-cyan); font-family:var(--font-mono); font-size:0.75rem;">48 hrs</span>
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; justify-content:space-between;">
+                <span>News Tips</span> <span style="color:var(--neon-cyan); font-family:var(--font-mono); font-size:0.75rem;">4 hrs</span>
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; justify-content:space-between;">
+                <span>Press Inquiries</span> <span style="color:var(--neon-cyan); font-family:var(--font-mono); font-size:0.75rem;">24 hrs</span>
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; justify-content:space-between;">
+                <span>Reviews</span> <span style="color:var(--neon-cyan); font-family:var(--font-mono); font-size:0.75rem;">5 days</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>FIU Project Info</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.7;">
+              GameVault is a final project for a Web Development course at Florida International University (FIU).
+              This site was built using only HTML5 and CSS3 with responsive web design principles.
+            </p>
+            <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim); margin-top:0.8rem; letter-spacing:1px;">
+              Author: Student Name<br />
+              Course: Web Dev — Spring 2026<br />
+              Date: April 19, 2026
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem">Game<span>Vault</span></a>
+          <p>Your premier destination for video game news, reviews, and community. Est. 2026 — FIU student project.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="news.html">Releases</a></li>
+            <li><a href="news.html">Hardware</a></li>
+            <li><a href="news.html">eSports</a></li>
+            <li><a href="reviews.html">Indie Games</a></li>
+            <li><a href="community.html">Retro Gaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:general@gamevault.com">✉ Email Us</a></li>
+            <li><a href="contact.html">Submit a Tip</a></li>
+            <li><a href="contact.html">Advertise</a></li>
+            <li><a href="contact.html">Write for Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GameVault. FIU — Web Development Final Project.</p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Form validation feedback
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        const required = form.querySelectorAll('[required]');
+        let allFilled = true;
+        required.forEach(field => {
+          if (field.type === 'checkbox' && !field.checked) {
+            allFilled = false;
+          } else if (field.type !== 'checkbox' && !field.value.trim()) {
+            allFilled = false;
+          }
+        });
+        if (!allFilled) {
+          e.preventDefault();
+          alert('Please fill in all required fields before submitting.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

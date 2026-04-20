@@ -1,0 +1,447 @@
+<!--
+  Author:      Student Name
+  Date:        April 19, 2026
+  Description: GameVault - Video Game News Website | News Page (news.html)
+               Displays latest gaming news articles, a video embed, and an
+               upcoming game releases table with platform and hype indicators.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault | Latest Video Game News — Breaking Headlines &amp; Updates</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="index.html" class="site-logo">Game<span>Vault</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html" class="active">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>News</span>
+      </div>
+      <p class="page-hero-eyebrow">// Breaking &amp; Latest</p>
+      <h1 class="page-hero-title">Gaming <span class="text-cyan">News</span></h1>
+      <p class="page-hero-desc">
+        Real-time coverage of everything happening in the video game industry—
+        announcements, releases, controversies, and everything in between.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="content-sidebar">
+
+        <!-- Main Articles -->
+        <main>
+          <h2 class="section-title">Top Stories</h2>
+          <p class="section-subtitle">Updated daily by our editorial team.</p>
+
+          <div class="news-grid" style="grid-template-columns:1fr; gap:2rem;">
+
+            <!-- Article 1 -->
+            <article class="card" style="flex-direction:row; align-items:stretch;">
+              <img
+                src="Media/GTA6.jpg"
+                alt="GTA VI confirmed for fall 2026 release"
+                style="width:260px; object-fit:cover; flex-shrink:0; border-radius:6px 0 0 6px;"
+              />
+              <div style="display:flex; flex-direction:column; flex:1;">
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="badge badge-pink">Breaking</span>
+                    <span class="card-date">Apr 19, 2026</span>
+                  </div>
+                  <h2 class="card-title" style="font-size:1.15rem">
+                    GTA VI Confirmed for Fall 2026: Rockstar Drops Huge Developer Update
+                  </h2>
+                  <p class="card-excerpt">
+                    Rockstar Games has ended months of speculation by officially confirming Grand Theft Auto VI
+                    for Fall 2026. The sprawling open-world crime epic returns to Vice City with two playable
+                    protagonists, a living economy engine, and what the studio calls "the most detailed open world
+                    ever built." Pre-orders are now live across all platforms.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span>By Marcus Reid</span>
+                  <span class="card-read-more">8 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card" style="flex-direction:row; align-items:stretch;">
+              <img
+                src="Media/PS6.jpg"
+                alt="PlayStation 6 leaked hardware specifications"
+                style="width:260px; object-fit:cover; flex-shrink:0; border-radius:6px 0 0 6px;"
+              />
+              <div style="display:flex; flex-direction:column; flex:1;">
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="badge badge-cyan">Hardware</span>
+                    <span class="card-date">Apr 18, 2026</span>
+                  </div>
+                  <h2 class="card-title" style="font-size:1.15rem">
+                    PlayStation 6 Spec Sheet Surfaces Online — 8K Support &amp; 240FPS Modes Rumored
+                  </h2>
+                  <p class="card-excerpt">
+                    A document purportedly from Sony's supply chain division has been circulating in gaming forums,
+                    detailing impressive PS6 specifications including a custom AMD GPU capable of true 8K output,
+                    hardware-accelerated ray tracing, and a next-gen SSD over 3x faster than the PS5's.
+                    Sony has not commented, but the community response has been electric.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span>By Yuki Tanaka</span>
+                  <span class="card-read-more">5 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="card" style="flex-direction:row; align-items:stretch;">
+              <img
+                src="Media/erat.jpg"
+                alt="Elden Ring Ashen Throne DLC teaser"
+                style="width:260px; object-fit:cover; flex-shrink:0; border-radius:6px 0 0 6px;"
+              />
+              <div style="display:flex; flex-direction:column; flex:1;">
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="badge badge-gold">DLC</span>
+                    <span class="card-date">Apr 17, 2026</span>
+                  </div>
+                  <h2 class="card-title" style="font-size:1.15rem">
+                    Elden Ring DLC "Ashen Throne" Officially Announced — First Look Footage Revealed
+                  </h2>
+                  <p class="card-excerpt">
+                    FromSoftware confirmed the next major Elden Ring expansion, titled "Ashen Throne,"
+                    with a 90-second teaser that sent the community into full detective mode. The footage
+                    shows a new landmass seemingly built on the ruins of the original Erdtree, and introduces
+                    what appears to be the most imposing boss character the studio has ever designed.
+                    Estimated Summer 2026 launch.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span>By Sofia Morales</span>
+                  <span class="card-read-more">6 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="card" style="flex-direction:row; align-items:stretch;">
+              <img
+                src="Media/ND.jpg"
+                alt="Nintendo Direct upcoming announcement"
+                style="width:260px; object-fit:cover; flex-shrink:0; border-radius:6px 0 0 6px;"
+              />
+              <div style="display:flex; flex-direction:column; flex:1;">
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="badge badge-purple">Nintendo</span>
+                    <span class="card-date">Apr 16, 2026</span>
+                  </div>
+                  <h2 class="card-title" style="font-size:1.15rem">
+                    Nintendo Direct Confirmed for May 2026 — Metroid Prime 4 &amp; Zelda Sequels Expected
+                  </h2>
+                  <p class="card-excerpt">
+                    Nintendo's official Twitter account confirmed a Nintendo Direct broadcast for mid-May 2026,
+                    with insider sources suggesting major reveals including Metroid Prime 4: Beyond's final release
+                    date, a new Legend of Zelda title set after Tears of the Kingdom, and a surprise new IP that
+                    has been in development for nearly six years.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span>By James Park</span>
+                  <span class="card-read-more">4 min read</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- end news-grid -->
+
+          <!-- ===================== VIDEO EMBED ===================== -->
+          <hr class="neon-divider" />
+          <h2 class="section-title">Featured Video</h2>
+          <p class="section-subtitle">Watch the biggest gaming trailers and coverage of the week.</p>
+
+          <div class="video-wrapper">
+            <iframe
+              src="Media/GTA6 Trailer.mp4"
+              title="GTA VI Official Trailer | Rockstar Games"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-dim); margin-top:0.6rem; letter-spacing:1px;">
+            ▸ GTA VI Official Trailer — Rockstar Games | 2026
+          </p>
+
+          <!-- ===================== UPCOMING RELEASES TABLE ===================== -->
+          <hr class="neon-divider" />
+          <h2 class="section-title">Upcoming Releases</h2>
+          <p class="section-subtitle">Mark your calendars — the biggest drops of 2026.</p>
+
+          <div style="overflow-x:auto; border:1px solid var(--border-color); border-radius:var(--radius);">
+            <table class="releases-table">
+              <thead>
+                <tr>
+                  <th>Game Title</th>
+                  <th>Genre</th>
+                  <th>Platform(s)</th>
+                  <th>Release Date</th>
+                  <th>Developer</th>
+                  <th>Hype Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GTA VI</td>
+                  <td>Open World</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Fall 2026</td>
+                  <td>Rockstar Games</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:100%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Elden Ring: Ashen Throne</td>
+                  <td>Action RPG</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Summer 2026</td>
+                  <td>FromSoftware</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:92%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Metroid Prime 4: Beyond</td>
+                  <td>Action Adventure</td>
+                  <td>
+                    <span class="platform-tag">NSW2</span>
+                  </td>
+                  <td>May 2026</td>
+                  <td>Retro Studios</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:88%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fable</td>
+                  <td>RPG</td>
+                  <td>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Q3 2026</td>
+                  <td>Playground Games</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:80%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hollow Knight: Silksong</td>
+                  <td>Metroidvania</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">NSW2</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>TBD 2026</td>
+                  <td>Team Cherry</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:95%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dragon Age: The Veilguard 2</td>
+                  <td>RPG</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Q4 2026</td>
+                  <td>BioWare</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:62%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Star Wars: Outlaws 2</td>
+                  <td>Action Adventure</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">XSX</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Q3 2026</td>
+                  <td>Massive Entertainment</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:70%"></div></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Marathon</td>
+                  <td>FPS / Extraction</td>
+                  <td>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">PC</span>
+                  </td>
+                  <td>Fall 2026</td>
+                  <td>Bungie</td>
+                  <td>
+                    <div class="hype-bar"><div class="hype-fill" style="width:75%"></div></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim); margin-top:0.8rem; letter-spacing:1px;">
+            * Dates subject to change. NSW2 = Nintendo Switch 2 | XSX = Xbox Series X | PS5 = PlayStation 5
+          </p>
+
+        </main><!-- end main -->
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h3>Trending Topics</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary); display:flex; justify-content:space-between; align-items:center;">
+                GTA VI <span class="badge badge-pink" style="font-size:0.6rem;">Hot</span>
+              </a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary); display:flex; justify-content:space-between; align-items:center;">
+                PlayStation 6 <span class="badge badge-cyan" style="font-size:0.6rem;">New</span>
+              </a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">Elden Ring DLC</a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">Nintendo Direct</a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">Xbox Game Pass</a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">Hollow Knight</a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">Cyberpunk 2078</a></li>
+              <li><a href="news.html" style="font-size:0.9rem; color:var(--text-secondary);">PC Hardware</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Quick Newsletter</h3>
+            <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:1rem;">
+              Get the biggest stories delivered to your inbox each morning.
+            </p>
+            <input
+              type="email"
+              placeholder="your@email.com"
+              style="width:100%; background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:var(--radius); padding:0.6rem 0.8rem; color:var(--text-primary); font-family:var(--font-body); margin-bottom:0.7rem; outline:none;"
+            />
+            <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">Subscribe</a>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>By Platform</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.4rem;">
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">🎮 PlayStation 5</a></li>
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">🟢 Xbox Series X</a></li>
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">🔴 Nintendo Switch 2</a></li>
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">💻 PC</a></li>
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">📱 Mobile</a></li>
+              <li><a href="news.html" style="color:var(--text-secondary); font-size:0.9rem;">🥽 VR / AR</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div><!-- end content-sidebar -->
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem">Game<span>Vault</span></a>
+          <p>Your premier destination for video game news, reviews, and community. Est. 2026 — FIU student project.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="news.html">Releases</a></li>
+            <li><a href="news.html">Hardware</a></li>
+            <li><a href="news.html">eSports</a></li>
+            <li><a href="reviews.html">Indie Games</a></li>
+            <li><a href="community.html">Retro Gaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:general@gamevault.com">✉ Email Us</a></li>
+            <li><a href="contact.html">Submit a Tip</a></li>
+            <li><a href="contact.html">Advertise</a></li>
+            <li><a href="contact.html">Write for Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GameVault. FIU — Web Development Final Project.</p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>

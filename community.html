@@ -1,0 +1,429 @@
+<!--
+  Author:      Lucas Menendez
+  Date:        April 19, 2026
+  Description: GameVault - Video Game News Website | Community Page (community.html)
+               Features top-rated games list, hot discussion threads, platform coverage
+               list, and audio player for the GameVault Podcast.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault | Gaming Community — Top Lists, Discussions &amp; Podcast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="index.html" class="site-logo">Game<span>Vault</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="community.html" class="active">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Community</span>
+      </div>
+      <p class="page-hero-eyebrow">// Gamers United</p>
+      <h1 class="page-hero-title">The <span class="text-gold">Community</span></h1>
+      <p class="page-hero-desc">
+        Discuss, debate, and discover. Join over 1.2 million gamers in conversations about
+        the games, hardware, and culture that define our hobby.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== COMMUNITY STATS ===================== -->
+  <section style="padding: 2rem 0; background: var(--bg-secondary); border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number">1.2M</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">48K</span>
+          <span class="stat-label">Active Today</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">320K</span>
+          <span class="stat-label">Forum Posts</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">92</span>
+          <span class="stat-label">Podcast Episodes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="content-sidebar">
+
+        <!-- Main Content -->
+        <main>
+
+          <!-- ===== TOP 10 GAMES LIST ===== -->
+          <h2 class="section-title">Top 10 Games of 2026</h2>
+          <p class="section-subtitle">Voted by our community of 1.2 million readers — updated monthly.</p>
+
+          <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius); overflow:hidden; margin-bottom:3rem;">
+            <ol class="top-games-list" style="padding:0.5rem 0;">
+              <li>
+                <img src="Media/hks2.jpg" alt="Hollow Knight Silksong thumbnail" />
+                <div class="game-info">
+                  <strong>Hollow Knight: Silksong</strong>
+                  <span>Team Cherry · Metroidvania</span>
+                </div>
+                <span class="game-score">9.5</span>
+              </li>
+              <li>
+                <img src="Media/bg3.jpg" alt="Baldur's Gate 3 Deluxe Edition thumbnail" />
+                <div class="game-info">
+                  <strong>Baldur's Gate 3: Deluxe Edition</strong>
+                  <span>Larian Studios · RPG</span>
+                </div>
+                <span class="game-score">9.8</span>
+              </li>
+              <li>
+                <img src="Media/hd2.jpg" alt="Helldivers 2 thumbnail" />
+                <div class="game-info">
+                  <strong>Helldivers 2</strong>
+                  <span>Arrowhead · Co-op Shooter</span>
+                </div>
+                <span class="game-score">9.1</span>
+              </li>
+              <li>
+                <img src="Media/mhw.jpg" alt="Monster Hunter Wilds thumbnail" />
+                <div class="game-info">
+                  <strong>Monster Hunter: Wilds</strong>
+                  <span>Capcom · Action RPG</span>
+                </div>
+                <span class="game-score">8.7</span>
+              </li>
+              <li>
+                <img src="Media/erat.jpg" alt="Elden Ring Ashen Throne thumbnail" />
+                <div class="game-info">
+                  <strong>Elden Ring: Ashen Throne (DLC)</strong>
+                  <span>FromSoftware · Action RPG</span>
+                </div>
+                <span class="game-score">TBD</span>
+              </li>
+              <li>
+                <img src="Media/ij2.jpg" alt="Indiana Jones Great Circle II thumbnail" />
+                <div class="game-info">
+                  <strong>Indiana Jones: Great Circle II</strong>
+                  <span>MachineGames · Action-Adventure</span>
+                </div>
+                <span class="game-score">8.4</span>
+              </li>
+              <li>
+                <img src="Media/fr.jpg" alt="Fable reboot thumbnail" />
+                <div class="game-info">
+                  <strong>Fable</strong>
+                  <span>Playground Games · RPG</span>
+                </div>
+                <span class="game-score">TBD</span>
+              </li>
+              <li>
+                <img src="Media/mrth.jpg" alt="Marathon thumbnail" />
+                <div class="game-info">
+                  <strong>Marathon</strong>
+                  <span>Bungie · FPS Extraction</span>
+                </div>
+                <span class="game-score">TBD</span>
+              </li>
+              <li>
+                <img src="Media/swo2.jpg" alt="Star Wars Outlaws 2 thumbnail" />
+                <div class="game-info">
+                  <strong>Star Wars: Outlaws 2</strong>
+                  <span>Massive Entertainment · Action-Adventure</span>
+                </div>
+                <span class="game-score">TBD</span>
+              </li>
+              <li>
+                <img src="Media/GTA6.jpg" alt="GTA VI thumbnail" />
+                <div class="game-info">
+                  <strong>Grand Theft Auto VI</strong>
+                  <span>Rockstar Games · Open World</span>
+                </div>
+                <span class="game-score">TBD</span>
+              </li>
+            </ol>
+          </div>
+
+          <!-- ===== HOT DISCUSSION THREADS ===== -->
+          <h2 class="section-title">Hot Discussions</h2>
+          <p class="section-subtitle">The conversations everyone is talking about right now.</p>
+
+          <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius); padding:1rem 1.5rem; margin-bottom:3rem;">
+            <ul class="thread-list">
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">Is GTA VI going to live up to 12 years of hype?</a>
+                  </div>
+                  <div class="thread-meta">482 replies · Posted by GamingFan_92 · 2 hours ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot" style="background:var(--neon-pink); box-shadow:0 0 8px var(--neon-pink);"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">Silksong is finally out — first impressions megathread!</a>
+                  </div>
+                  <div class="thread-meta">1,204 replies · Posted by KnightFan · 5 hours ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot" style="background:var(--neon-gold); box-shadow:0 0 8px var(--neon-gold);"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">PS6 specs leaked — what do you actually think about 8K gaming?</a>
+                  </div>
+                  <div class="thread-meta">318 replies · Posted by TechWatcher · 8 hours ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">Best indie games you've played so far in 2026?</a>
+                  </div>
+                  <div class="thread-meta">97 replies · Posted by IndieDevLover · 1 day ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot" style="background:var(--neon-purple); box-shadow:0 0 8px var(--neon-purple);"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">Nintendo Direct wishlist — what NEEDS to be shown?</a>
+                  </div>
+                  <div class="thread-meta">256 replies · Posted by NintendoFanatic · 1 day ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">Elden Ring Ashen Throne lore analysis — who is the new boss?</a>
+                  </div>
+                  <div class="thread-meta">734 replies · Posted by LoreMasterRupert · 2 days ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot" style="background:var(--neon-cyan); box-shadow:0 0 8px var(--neon-cyan);"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">PC gaming vs console in 2026 — is the gap still widening?</a>
+                  </div>
+                  <div class="thread-meta">543 replies · Posted by PCMasterXX · 3 days ago</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">
+                    <a href="community.html">What retro game should get a modern remake next?</a>
+                  </div>
+                  <div class="thread-meta">188 replies · Posted by RetroGamerGal · 3 days ago</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===== GAMEVAULT PODCAST ===== -->
+          <h2 class="section-title">The GameVault Podcast</h2>
+          <p class="section-subtitle">New episodes every Friday — subscribe wherever you listen.</p>
+
+          <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius); padding:2rem;">
+            <div style="display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;">
+              <img
+                src="Media/Podcast.jpg"
+                alt="GameVault Podcast cover art"
+                style="width:150px; height:150px; border-radius:12px; object-fit:cover; flex-shrink:0; border:2px solid var(--border-color);"
+              />
+              <div style="flex:1; min-width:200px;">
+                <span class="badge badge-pink" style="margin-bottom:0.7rem;">Latest Episode</span>
+                <h3 style="font-family:var(--font-heading); font-size:1rem; font-weight:700; margin-bottom:0.5rem;">
+                  Ep. 92: GTA VI, Elden Ring DLC &amp; Our 2026 Game of the Year Predictions
+                </h3>
+                <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.2rem; line-height:1.6;">
+                  Marcus, Sofia, and James break down everything from the GTA VI developer diary,
+                  theorize about the Elden Ring DLC villain, and share their early GOTY picks.
+                  Runtime: 1h 22min
+                </p>
+                <!-- HTML5 Audio Player -->
+                <audio controls style="width:100%; accent-color:var(--neon-cyan);">
+                  <source src="Media/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+
+            <hr class="neon-divider" style="margin:1.5rem 0;" />
+
+            <h4 style="font-family:var(--font-heading); font-size:0.65rem; letter-spacing:3px; color:var(--neon-cyan); margin-bottom:1rem; text-transform:uppercase;">Previous Episodes</h4>
+            <ul class="thread-list">
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">Ep. 91: Silksong Review Roundtable — Was It Worth the Wait?</div>
+                  <div class="thread-meta">Apr 11, 2026 · 1h 08min</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">Ep. 90: The PS6 Rumor Mill &amp; What We Actually Want from Next-Gen</div>
+                  <div class="thread-meta">Apr 4, 2026 · 55min</div>
+                </div>
+              </li>
+              <li>
+                <div class="thread-dot"></div>
+                <div>
+                  <div class="thread-title">Ep. 89: Helldivers 3 Co-op Deep Dive &amp; Listener Q&amp;A</div>
+                  <div class="thread-meta">Mar 28, 2026 · 1h 14min</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </main><!-- end main -->
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h3>Platforms We Cover</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; border-bottom:1px solid var(--border-color);">
+                <span style="font-size:1.1rem;">🎮</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">PlayStation 5</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; border-bottom:1px solid var(--border-color);">
+                <span style="font-size:1.1rem;">🟢</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">Xbox Series X/S</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; border-bottom:1px solid var(--border-color);">
+                <span style="font-size:1.1rem;">🔴</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">Nintendo Switch 2</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; border-bottom:1px solid var(--border-color);">
+                <span style="font-size:1.1rem;">💻</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">PC Gaming</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0; border-bottom:1px solid var(--border-color);">
+                <span style="font-size:1.1rem;">📱</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">Mobile Gaming</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:0.7rem; padding:0.4rem 0;">
+                <span style="font-size:1.1rem;">🥽</span>
+                <span style="font-size:0.9rem; color:var(--text-secondary);">VR &amp; AR</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Community Guidelines</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.6rem;">
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">✓</span>
+                Be respectful to all members
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">✓</span>
+                Mark spoilers clearly
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">✓</span>
+                No spam or self-promotion
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">✓</span>
+                Stay on topic per thread
+              </li>
+              <li style="font-size:0.85rem; color:var(--text-secondary); display:flex; gap:0.5rem; align-items:flex-start;">
+                <span style="color:var(--neon-cyan); flex-shrink:0;">✓</span>
+                Report rule violations
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem">Game<span>Vault</span></a>
+          <p>Your premier destination for video game news, reviews, and community. Est. 2026 — FIU student project.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Top 10 Games</a></li>
+            <li><a href="community.html">Hot Threads</a></li>
+            <li><a href="community.html">Podcast</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:general@gamevault.com">✉ Email Us</a></li>
+            <li><a href="contact.html">Submit a Tip</a></li>
+            <li><a href="contact.html">Advertise</a></li>
+            <li><a href="contact.html">Write for Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GameVault. FIU — Web Development Final Project.</p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!--
+  Author:      Student Name
+  Date:        April 19, 2026
+  Description: GameVault - Video Game News Website | Reviews Page (reviews.html)
+               Displays scored game reviews with star ratings, genre tags,
+               review excerpts, and a sidebar with top-rated games list.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault | Game Reviews — Expert Scores &amp; In-Depth Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="index.html" class="site-logo">Game<span>Vault</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html" class="active">Reviews</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Reviews</span>
+      </div>
+      <p class="page-hero-eyebrow">// Expert Analysis</p>
+      <h1 class="page-hero-title">Game <span class="text-pink">Reviews</span></h1>
+      <p class="page-hero-desc">
+        Honest, thorough, and spoiler-conscious reviews from journalists who live and breathe games.
+        Our scores are based on gameplay, narrative, performance, and value.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEW SCORE LEGEND ===================== -->
+  <div style="background:var(--bg-secondary); border-bottom:1px solid var(--border-color); padding:1rem 0;">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+        <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim); letter-spacing:2px; text-transform:uppercase;">Score Scale:</span>
+        <span class="badge badge-cyan">10 — Masterpiece</span>
+        <span class="badge badge-cyan">9 — Excellent</span>
+        <span class="badge badge-gold">8 — Great</span>
+        <span class="badge badge-gold">7 — Good</span>
+        <span class="badge badge-pink">6 — Decent</span>
+        <span class="badge badge-pink">5 or below — Disappointing</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== REVIEWS GRID ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="content-sidebar">
+
+        <!-- Reviews Main -->
+        <main>
+          <h2 class="section-title">Recent Reviews</h2>
+          <p class="section-subtitle">Written by our editorial team — no sponsored scores, ever.</p>
+
+          <div class="news-grid">
+
+            <!-- Review 1 -->
+            <article class="review-card">
+              <div class="review-score-bar score-10"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/bg3.jpg"
+                  alt="Baldur's Gate 3 - game of the year contender screenshot"
+                  class="card-img"
+                />
+                <div class="review-score-badge">
+                  9.8<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-purple">RPG</span>
+                  <span class="badge badge-cyan">PC · PS5</span>
+                  <span class="card-date">Apr 10, 2026</span>
+                </div>
+                <h3 class="card-title">Baldur's Gate 3: Deluxe Edition</h3>
+                <div class="star-rating" aria-label="Rating: 5 out of 5 stars">★★★★★</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  The Definitive Edition cements Baldur's Gate 3 as one of the greatest RPGs ever created.
+                  Larian's expanded ending chapters and the new Origin character add hours of extraordinary
+                  content to an already flawless game. A landmark achievement in interactive storytelling.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>Sofia Morales</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="review-card">
+              <div class="review-score-bar score-9"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/hd2.jpg"
+                  alt="Helldivers 2 co-op action screenshot"
+                  class="card-img"
+                />
+                <div class="review-score-badge">
+                  9.1<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-pink">Co-op Shooter</span>
+                  <span class="badge badge-cyan">PS5 · PC</span>
+                  <span class="card-date">Apr 8, 2026</span>
+                </div>
+                <h3 class="card-title">Helldivers 2</h3>
+                <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">★★★★½</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  Arrowhead doubles down on everything that made the sequel a phenomenon.
+                  Helldivers 2 introduces new enemy factions, a reworked stratagem system, and
+                  planetary-scale siege events. The best co-op shooter money can buy in 2026.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>James Park</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="review-card">
+              <div class="review-score-bar score-8"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/ij2.jpg"
+                  alt="Indiana Jones and the Great Circle gameplay screenshot"
+                  class="card-img"
+                />
+                <div class="review-score-badge" style="border-color:var(--neon-gold); color:var(--neon-gold); box-shadow:0 0 15px rgba(255,214,0,0.4);">
+                  8.4<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-gold">Action-Adventure</span>
+                  <span class="badge badge-cyan">XSX · PC · PS5</span>
+                  <span class="card-date">Apr 5, 2026</span>
+                </div>
+                <h3 class="card-title">Indiana Jones &amp; the Great Circle II</h3>
+                <div class="star-rating" aria-label="Rating: 4 out of 5 stars">★★★★☆</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  MachineGames returns to the whip with a globe-trotting sequel that captures
+                  the Indy magic perfectly. Puzzles are cleverly designed, combat is cinematic,
+                  and the story keeps you hooked until the credits. A few pacing hiccups hold
+                  it just shy of perfection.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>Aisha Bennett</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+            <!-- Review 4 -->
+            <article class="review-card">
+              <div class="review-score-bar score-9"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/hks2.jpg"
+                  alt="Silksong - sequel to Hollow Knight"
+                  class="card-img"
+                />
+                <div class="review-score-badge">
+                  9.5<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-purple">Metroidvania</span>
+                  <span class="badge badge-cyan">All Platforms</span>
+                  <span class="card-date">Apr 2, 2026</span>
+                </div>
+                <h3 class="card-title">Hollow Knight: Silksong</h3>
+                <div class="star-rating" aria-label="Rating: 5 out of 5 stars">★★★★★</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  Worth every year of waiting. Team Cherry's sequel pushes the genre to breathtaking
+                  new heights with Hornet's acrobatic movement, 150+ new enemies, a stunning original
+                  soundtrack, and a world that feels alive at every turn. A genre-defining achievement.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>Marcus Reid</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+            <!-- Review 5 -->
+            <article class="review-card">
+              <div class="review-score-bar score-8"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/mhw.jpg"
+                  alt="Monster Hunter Wilds gameplay screenshot"
+                  class="card-img"
+                />
+                <div class="review-score-badge" style="border-color:var(--neon-gold); color:var(--neon-gold); box-shadow:0 0 15px rgba(255,214,0,0.4);">
+                  8.7<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-gold">Action RPG</span>
+                  <span class="badge badge-cyan">PS5 · XSX · PC</span>
+                  <span class="card-date">Mar 28, 2026</span>
+                </div>
+                <h3 class="card-title">Monster Hunter Wilds</h3>
+                <div class="star-rating" aria-label="Rating: 4.5 out of 5 stars">★★★★½</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  Capcom redefines the Monster Hunter formula with a seamless open world,
+                  weather-driven ecosystems, and the best weapon variety in the series.
+                  Hundreds of hours of content await hunters of every skill level.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>Yuki Tanaka</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+            <!-- Review 6 -->
+            <article class="review-card">
+              <div class="review-score-bar score-7"></div>
+              <div class="review-img-wrapper">
+                <img
+                  src="Media/dgtv.jpg"
+                  alt="Dragon Age The Veilguard gameplay review screenshot"
+                  class="card-img"
+                />
+                <div class="review-score-badge" style="border-color:var(--neon-gold); color:var(--neon-gold); box-shadow:0 0 15px rgba(255,214,0,0.4);">
+                  7.2<small>/10</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="badge badge-gold">RPG</span>
+                  <span class="badge badge-cyan">PS5 · XSX · PC</span>
+                  <span class="card-date">Mar 20, 2026</span>
+                </div>
+                <h3 class="card-title">Dragon Age: The Veilguard</h3>
+                <div class="star-rating" aria-label="Rating: 3.5 out of 5 stars">★★★½☆</div>
+                <p class="card-excerpt" style="margin-top:0.5rem;">
+                  A competent return for the Dragon Age series that stumbles under the weight of
+                  its own ambition. The companion writing shines, but a rushed third act and
+                  some repetitive dungeon design prevent it from reaching the series' former heights.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>Sofia Morales</span>
+                <a href="reviews.html" class="card-read-more">Full Review →</a>
+              </div>
+            </article>
+
+          </div><!-- end news-grid -->
+        </main>
+
+        <!-- ===================== SIDEBAR ===================== -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h3>Top Rated 2026</h3>
+            <ol class="top-games-list" style="counter-reset:game-counter;">
+              <li>
+                <img src="Media/hks2.jpg" alt="Hollow Knight: Silksong thumbnail" />
+                <div class="game-info">
+                  <strong>Silksong</strong>
+                  <span>Team Cherry</span>
+                </div>
+                <span class="game-score">9.5</span>
+              </li>
+              <li>
+                <img src="Media/bg3.jpg" alt="Baldur's Gate 3 thumbnail" />
+                <div class="game-info">
+                  <strong>BG3: Definitive</strong>
+                  <span>Larian Studios</span>
+                </div>
+                <span class="game-score">9.8</span>
+              </li>
+              <li>
+                <img src="Media/hd2.jpg" alt="Helldivers 2 thumbnail" />
+                <div class="game-info">
+                  <strong>Helldivers 2</strong>
+                  <span>Arrowhead</span>
+                </div>
+                <span class="game-score">9.1</span>
+              </li>
+              <li>
+                <img src="Media/mhw.jpg" alt="Monster Hunter Wilds thumbnail" />
+                <div class="game-info">
+                  <strong>MH: Wilds</strong>
+                  <span>Capcom</span>
+                </div>
+                <span class="game-score">8.7</span>
+              </li>
+              <li>
+                <img src="Media/ij2.jpg" alt="Indy: Great Circle II thumbnail" />
+                <div class="game-info">
+                  <strong>Indy: Great Circle II</strong>
+                  <span>MachineGames</span>
+                </div>
+                <span class="game-score">8.4</span>
+              </li>
+            </ol>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Review by Genre</h3>
+            <ul style="display:flex; flex-direction:column; gap:0.4rem;">
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">RPG <span class="badge badge-purple" style="font-size:0.55rem;">42</span></a></li>
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">Action-Adventure <span class="badge badge-cyan" style="font-size:0.55rem;">38</span></a></li>
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">Shooter <span class="badge badge-pink" style="font-size:0.55rem;">31</span></a></li>
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">Indie <span class="badge badge-gold" style="font-size:0.55rem;">29</span></a></li>
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">Strategy <span class="badge badge-cyan" style="font-size:0.55rem;">18</span></a></li>
+              <li><a href="reviews.html" style="color:var(--text-secondary); font-size:0.9rem; display:flex; justify-content:space-between;">Sports <span class="badge badge-purple" style="font-size:0.55rem;">15</span></a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Our Review Policy</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.7;">
+              GameVault never accepts payment for reviews. All copies are purchased by staff or
+              obtained via standard press channels. Scores reflect our genuine editorial opinion.
+            </p>
+            <a href="contact.html" style="display:inline-block; margin-top:0.8rem; font-family:var(--font-heading); font-size:0.65rem; letter-spacing:2px; color:var(--neon-cyan);">SUGGEST A GAME →</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem">Game<span>Vault</span></a>
+          <p>Your premier destination for video game news, reviews, and community. Est. 2026 — FIU student project.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Genres</h4>
+          <ul>
+            <li><a href="reviews.html">RPG</a></li>
+            <li><a href="reviews.html">Action</a></li>
+            <li><a href="reviews.html">Indie</a></li>
+            <li><a href="reviews.html">Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:general@gamevault.com">✉ Email Us</a></li>
+            <li><a href="contact.html">Submit a Tip</a></li>
+            <li><a href="contact.html">Advertise</a></li>
+            <li><a href="contact.html">Write for Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GameVault. FIU — Web Development Final Project.</p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>

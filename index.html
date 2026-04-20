@@ -1,0 +1,383 @@
+<!--
+  Author:      Student Name
+  Date:        April 19, 2026
+  Description: GameVault - Video Game News Website | Home Page (index.html)
+               Features hero section, featured news cards, ticker bar,
+               quick stats, and platform overview.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault | #1 Video Game News &amp; Reviews Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="index.html" class="site-logo">Game<span>Vault</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">// Your Ultimate Gaming Source</p>
+        <h1 class="hero-title glitch" data-text="Level Up Your News Game">
+          Level Up Your <span class="accent">News</span><br>
+          <span class="accent-pink">Game.</span>
+        </h1>
+        <p class="hero-description">
+          Breaking news, in-depth reviews, and the pulse of the gaming world—
+          all in one place. Stay ahead of every drop, every patch, every moment.
+        </p>
+        <div class="hero-actions">
+          <a href="news.html" class="btn btn-primary">Latest News</a>
+          <a href="reviews.html" class="btn btn-outline">Read Reviews</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>▼ &nbsp; Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker-bar">
+    <span class="ticker-label">Breaking</span>
+    <div class="ticker-track">
+      <span>Elden Ring DLC officially announced for Summer 2026</span>
+      <span>Nintendo Direct scheduled for next month</span>
+      <span>GTA VI release window confirmed — Fall 2026</span>
+      <span>PlayStation 6 rumored specs leaked online</span>
+      <span>Xbox Game Pass adds 12 new titles this week</span>
+      <span>Baldur's Gate 3 wins GOTY at The Game Awards 2026</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Elden Ring DLC officially announced for Summer 2026</span>
+      <span>Nintendo Direct scheduled for next month</span>
+      <span>GTA VI release window confirmed — Fall 2026</span>
+      <span>PlayStation 6 rumored specs leaked online</span>
+      <span>Xbox Game Pass adds 12 new titles this week</span>
+      <span>Baldur's Gate 3 wins GOTY at The Game Awards 2026</span>
+    </div>
+  </div>
+
+  <!-- ===================== FEATURED NEWS ===================== -->
+  <section class="section">
+    <div class="container">
+      <p class="hero-eyebrow" style="margin-bottom:0.3rem">// Hot Right Now</p>
+      <h2 class="section-title">Featured Stories</h2>
+      <p class="section-subtitle">The biggest headlines shaping the gaming landscape today.</p>
+
+      <div class="news-grid featured">
+        <!-- Featured main card -->
+        <article class="card">
+          <img
+            src="Media/GTA6.jpg"
+            alt="GTA VI — the most anticipated game in history approaches its launch window"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-pink">Breaking</span>
+              <span class="card-date">Apr 19, 2026</span>
+            </div>
+            <h2 class="card-title" style="font-size:1.3rem">
+              <a href="news.html">GTA VI Confirmed for Fall 2026: Everything We Know So Far</a>
+            </h2>
+            <p class="card-excerpt">
+              Rockstar Games finally broke their silence with a detailed developer update confirming
+              a Fall 2026 release window for GTA VI. The studio released new gameplay footage
+              showing Vice City's open world, dual protagonists, and a radically evolved economy system
+              that lets players build criminal empires from the ground up.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By Marcus Reid</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Side card 1 -->
+        <article class="card">
+          <img
+            src="Media/PS6.jpg"
+            alt="PlayStation 6 rumored hardware specifications"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-cyan">Hardware</span>
+              <span class="card-date">Apr 18, 2026</span>
+            </div>
+            <h3 class="card-title">
+              <a href="news.html">PlayStation 6 Specs Leaked: 8K Gaming &amp; 240FPS Support?</a>
+            </h3>
+            <p class="card-excerpt">
+              An anonymous Sony supply-chain contact has shared alleged PS6 hardware specs pointing
+              to next-generation graphical capabilities that would leave current-gen hardware far behind.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By Yuki Tanaka</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Side card 2 -->
+        <article class="card">
+          <img
+            src="Media/erat.jpg"
+            alt="Elden Ring expansion preview"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-gold">DLC</span>
+              <span class="card-date">Apr 17, 2026</span>
+            </div>
+            <h3 class="card-title">
+              <a href="news.html">Elden Ring's Ashen Throne DLC Announced — First Teaser Inside</a>
+            </h3>
+            <p class="card-excerpt">
+              FromSoftware dropped a stunning teaser for the next Elden Ring expansion, teasing
+              a brand-new landmass and a villain described as "the most fearsome boss ever designed."
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By Sofia Morales</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ROW ===================== -->
+  <section style="padding: 2rem 0; background: var(--bg-secondary); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number">2,400+</span>
+          <span class="stat-label">Articles Published</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">850+</span>
+          <span class="stat-label">Games Reviewed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1.2M</span>
+          <span class="stat-label">Monthly Readers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">14</span>
+          <span class="stat-label">Years Online</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">48</span>
+          <span class="stat-label">Staff Writers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LATEST NEWS STRIP ===================== -->
+  <section class="section">
+    <div class="container">
+      <p class="hero-eyebrow" style="margin-bottom:0.3rem">// Just Dropped</p>
+      <h2 class="section-title">Latest News</h2>
+      <p class="section-subtitle">Stay wired in — the gaming world never sleeps.</p>
+
+      <div class="news-grid">
+        <article class="card">
+          <img
+            src="Media/ND.jpg"
+            alt="Nintendo Direct announcement preview"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-purple">Nintendo</span>
+              <span class="card-date">Apr 16, 2026</span>
+            </div>
+            <h3 class="card-title">
+              <a href="news.html">Nintendo Direct Announced: Zelda, Metroid, and More Expected</a>
+            </h3>
+            <p class="card-excerpt">
+              Nintendo confirmed a major Direct broadcast set for next month with hints at new entries
+              in some of the most beloved franchises in gaming history.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By James Park</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="Media/XBG.jpg"
+            alt="Xbox Game Pass new titles"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-cyan">Xbox</span>
+              <span class="card-date">Apr 15, 2026</span>
+            </div>
+            <h3 class="card-title">
+              <a href="news.html">Xbox Game Pass April Wave 2: 12 Titles Including Day-One Blockbusters</a>
+            </h3>
+            <p class="card-excerpt">
+              Microsoft's subscription juggernaut adds another impressive wave of games, including several
+              major publisher titles launching straight to the service on day one.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By Aisha Bennett</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="Media/CyberPunk.jpg"
+            alt="Cyberpunk 2078 teaser"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="badge badge-pink">Reveal</span>
+              <span class="card-date">Apr 14, 2026</span>
+            </div>
+            <h3 class="card-title">
+              <a href="news.html">CD Projekt Red Teases Cyberpunk 2078 with Cryptic Tweet</a>
+            </h3>
+            <p class="card-excerpt">
+              The Polish developer sent the internet into a frenzy with a single, carefully worded post
+              that most fans are interpreting as an early teaser for the Cyberpunk sequel.
+            </p>
+          </div>
+          <div class="card-footer">
+            <span>By Marcus Reid</span>
+            <a href="news.html" class="card-read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem">
+        <a href="news.html" class="btn btn-outline">View All News →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PLATFORMS OVERVIEW ===================== -->
+  <section class="section" style="background:var(--bg-secondary); border-top:1px solid var(--border-color);">
+    <div class="container">
+      <p class="hero-eyebrow" style="margin-bottom:0.3rem">// We Cover It All</p>
+      <h2 class="section-title">Platforms We Cover</h2>
+      <p class="section-subtitle">Every platform, every genre, every gamer.</p>
+
+      <ul class="platforms-list">
+        <li class="platform-item">
+          <span class="platform-icon">🎮</span>
+          <h4>PlayStation 5</h4>
+        </li>
+        <li class="platform-item">
+          <span class="platform-icon">🟢</span>
+          <h4>Xbox Series X/S</h4>
+        </li>
+        <li class="platform-item">
+          <span class="platform-icon">🔴</span>
+          <h4>Nintendo Switch 2</h4>
+        </li>
+        <li class="platform-item">
+          <span class="platform-icon">💻</span>
+          <h4>PC Gaming</h4>
+        </li>
+        <li class="platform-item">
+          <span class="platform-icon">📱</span>
+          <h4>Mobile</h4>
+        </li>
+        <li class="platform-item">
+          <span class="platform-icon">🥽</span>
+          <h4>VR / AR</h4>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem">Game<span>Vault</span></a>
+          <p>Your premier destination for video game news, reviews, and community. Est. 2026 — FIU student project.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="news.html">Releases</a></li>
+            <li><a href="news.html">Hardware</a></li>
+            <li><a href="news.html">eSports</a></li>
+            <li><a href="reviews.html">Indie Games</a></li>
+            <li><a href="community.html">Retro Gaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:general@gamevault.com">✉ Email Us</a></li>
+            <li><a href="contact.html">Submit a Tip</a></li>
+            <li><a href="contact.html">Advertise</a></li>
+            <li><a href="contact.html">Write for Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GameVault. FIU — Web Development Final Project. All rights reserved.</p>
+        <p>Contact: <a href="mailto:general@gamevault.com">general@gamevault.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▲</button>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
